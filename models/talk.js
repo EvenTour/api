@@ -21,12 +21,13 @@ module.exports = (sequelize, DataTypes) => {
             foreignKey: 'schedule_id',
             as : 'schedule'
         });
-
+/*
         Talk.belongsToMany(models.Speaker,{
+            through : true,
             foreignKey: 'speaker_id',
             as : 'speakers'
         });
-
+*/
         Talk.hasOne(models.Survey,{
             foreignKey: 'talk_id',
             as : 'survey'
