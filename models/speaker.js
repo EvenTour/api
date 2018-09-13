@@ -12,7 +12,15 @@ module.exports = (sequelize, DataTypes) => {
         specialization: DataTypes.STRING
     }, {});
     Speaker.associate = function(models) {
-        // associations can be defined here
+        Speaker.hasOne(models.Survey,{
+            foreignKey: 'speaker_id',
+            as : 'survey'
+        });
+
+        Speaker.hasOne(models.Talk,{
+            foreignKey: 'speaker_id',
+            as : 'talk'
+        });
     };
     return Speaker;
 };

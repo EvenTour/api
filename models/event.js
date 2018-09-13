@@ -28,8 +28,7 @@ module.exports = (sequelize, DataTypes) => {
            as : 'location'
         });
 
-        // TODO : CHANGE CLASS DIAGRAM 1 -- *
-        Event.hasMany(models.Schedule,{
+        Event.hasOne(models.Schedule,{
             foreignKey : 'event_id',
             as : 'schedules'
         });

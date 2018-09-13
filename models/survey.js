@@ -9,7 +9,20 @@ module.exports = (sequelize, DataTypes) => {
         url: DataTypes.STRING
     }, {});
     Survey.associate = function(models) {
-        // associations can be defined here
+        Survey.belongsTo(models.Spectator,{
+            foreignKey : 'spectator_id',
+            as : 'spectator'
+        });
+
+        Survey.belongsTo(models.Speaker,{
+            foreignKey : 'speaker_id',
+            as : 'speaker'
+        });
+
+        Survey.belongsTo(models.Talk,{
+            foreignKey : 'talk_id',
+            as : 'talk'
+        });
     };
     return Survey;
 };

@@ -11,7 +11,14 @@ module.exports = (sequelize, DataTypes) => {
         interests: DataTypes.STRING
     }, {});
     Spectator.associate = function(models) {
-        // associations can be defined here
+        Spectator.hasOne(models.Ticket,{
+            foreignKey: 'spectator_id',
+            as : 'ticket'
+        });
+        Spectator.hasOne(models.Survey,{
+            foreignKey: 'spectator_id',
+            as : 'survey'
+        });
     };
     return Spectator;
 };

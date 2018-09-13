@@ -20,7 +20,17 @@ module.exports = (sequelize, DataTypes) => {
         Talk.belongsTo(models.Schedule,{
             foreignKey: 'schedule_id',
             as : 'schedule'
-        })
+        });
+
+        Talk.belongsToMany(models.Speaker,{
+            foreignKey: 'speaker_id',
+            as : 'speakers'
+        });
+
+        Talk.hasOne(models.Survey,{
+            foreignKey: 'talk_id',
+            as : 'survey'
+        });
     };
     return Talk;
 };
