@@ -1,4 +1,5 @@
 # EvenTour API
+![](art/evenTour_ClassDiagram.png)
 ---
 To run locally:
 
