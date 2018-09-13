@@ -1,7 +1,7 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Ticket = sequelize.define('Ticket', {
-    id: DataTypes.INTEGER,
+    id:  { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true, allowNull: false},
     event_id: DataTypes.INTEGER,
     spectator_id: DataTypes.INTEGER,
     description: DataTypes.STRING

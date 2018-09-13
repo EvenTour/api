@@ -1,7 +1,7 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Survey = sequelize.define('Survey', {
-    id: DataTypes.INTEGER,
+    id:  { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true, allowNull: false},
     talk_id: DataTypes.INTEGER,
     speaker_id: DataTypes.INTEGER,
     spectator_id: DataTypes.INTEGER,

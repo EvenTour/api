@@ -1,7 +1,7 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Space = sequelize.define('Space', {
-    id: DataTypes.INTEGER,
+    id:  { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true, allowNull: false},
     place_id: DataTypes.INTEGER,
     name: DataTypes.STRING,
     description: DataTypes.STRING
