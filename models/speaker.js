@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-    const speaker = sequelize.define('speaker', {
+    const Speaker = sequelize.define('Speaker', {
         id:  { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true, allowNull: false},
         name: DataTypes.STRING,
         lastName: DataTypes.STRING,
@@ -11,8 +11,8 @@ module.exports = (sequelize, DataTypes) => {
         bio: DataTypes.STRING,
         specialization: DataTypes.STRING
     }, {});
-    speaker.associate = function(models) {
+    Speaker.associate = function(models) {
         // associations can be defined here
     };
-    return speaker;
+    return Speaker;
 };

@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-    const staff = sequelize.define('staff', {
+    const Staff = sequelize.define('Staff', {
         id:  { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true, allowNull: false},
         name: DataTypes.STRING,
         lastName: DataTypes.STRING,
@@ -11,8 +11,12 @@ module.exports = (sequelize, DataTypes) => {
         role: DataTypes.STRING,
         event_id: DataTypes.INTEGER,
     }, {});
-    staff.associate = function(models) {
-        // associations can be defined here
+    Staff.associate = function(models) {
+
+        Staff.belongsTo(models.Event,{
+           foreignKey: 'event_id',
+           as : 'events'
+        });
     };
-    return staff;
+    return Staff;
 };

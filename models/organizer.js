@@ -8,7 +8,10 @@ module.exports = (sequelize, DataTypes) => {
         event_id: DataTypes.INTEGER
     }, {});
     Organizer.associate = function(models) {
-        // TODO : associations can be defined here
+        Organizer.belongsTo(models.Event,{
+           foreignKey : 'event_id',
+           as : 'event'
+        });
     };
     return Organizer;
 };

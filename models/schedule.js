@@ -6,7 +6,15 @@ module.exports = (sequelize, DataTypes) => {
         description: DataTypes.STRING
     }, {});
     Schedule.associate = function(models) {
-        // associations can be defined here
+        Schedule.belongsTo(models.Event,{
+           foreignKey : 'event_id',
+           as : 'event'
+        });
+
+        Schedule.hasMany(models.Talk,{
+            foreignKey: 'schedule_id',
+            as : 'talks'
+        })
     };
     return Schedule;
 };

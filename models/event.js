@@ -8,11 +8,32 @@ module.exports = (sequelize, DataTypes) => {
         duration: DataTypes.INTEGER
     }, {});
     Event.associate = function(models) {
+
         Event.hasMany(models.Ticket,{
             foreignKey: 'event_id',
             as : 'tickets',
         });
-        Event.hasMany(models.)
+        Event.hasMany(models.Organizer,{
+           foreignKey: 'event_id',
+           as : 'organizers'
+        });
+
+        Event.hasMany(models.Staff,{
+           foreignKey: 'event_id',
+           as : 'staffs'
+        });
+
+        Event.hasOne(models.Location,{
+           foreignKey : 'event_id',
+           as : 'location'
+        });
+
+        // TODO : CHANGE CLASS DIAGRAM 1 -- *
+        Event.hasMany(models.Schedule,{
+            foreignKey : 'event_id',
+            as : 'schedules'
+        });
+
     };
     return Event;
 };

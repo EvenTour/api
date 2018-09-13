@@ -7,7 +7,10 @@ module.exports = (sequelize, DataTypes) => {
         description: DataTypes.STRING
     }, {});
     Ticket.associate = function(models) {
-        // associations can be defined here
+        Ticket.belongsTo(models.Event,{
+            foreignKey : 'event_id',
+            as : 'event'
+        })
     };
     return Ticket;
 };

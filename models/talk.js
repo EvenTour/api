@@ -12,7 +12,15 @@ module.exports = (sequelize, DataTypes) => {
         date: DataTypes.STRING
     }, {});
     Talk.associate = function(models) {
-        // associations can be defined here
+        Talk.belongsTo(models.Space,{
+           foreignKey : 'space_id',
+           as : 'space'
+        });
+
+        Talk.belongsTo(models.Schedule,{
+            foreignKey: 'schedule_id',
+            as : 'schedule'
+        })
     };
     return Talk;
 };
