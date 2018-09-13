@@ -22,10 +22,10 @@ module.exports = (sequelize, DataTypes) => {
             as : 'schedule'
         });
 
-        Talk.belongsToMany(models.Speaker,{
+        /*Talk.belongsToMany(models.Speaker,{
             foreignKey: 'speaker_id',
             as : 'speakers'
-        });
+        });*/
 
         Talk.hasOne(models.Survey,{
             foreignKey: 'talk_id',
