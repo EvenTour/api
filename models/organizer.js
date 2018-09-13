@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
     event_id: DataTypes.INTEGER
   }, {});
   Organizer.associate = function(models) {
-    // TODO :  associations can be defined here
+    // TODO : associations can be defined here
   };
   return Organizer;
 };
