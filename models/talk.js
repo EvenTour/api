@@ -21,6 +21,7 @@ module.exports = (sequelize, DataTypes) => {
             foreignKey: 'schedule_id',
             as : 'schedule'
         });
+
 /*
         Talk.belongsToMany(models.Speaker,{
             through : true,
@@ -28,6 +29,7 @@ module.exports = (sequelize, DataTypes) => {
             as : 'speakers'
         });
 */
+
         Talk.hasOne(models.Survey,{
             foreignKey: 'talk_id',
             as : 'survey'
