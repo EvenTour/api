@@ -8,6 +8,13 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      event_id: {
+        type: Sequelize.INTEGER,
+          references:{
+              model : 'Events',
+              key: 'id'
+          }
+      },
       urlImage :{
         type : Sequelize.STRING
       },
@@ -19,13 +26,6 @@ module.exports = {
       },
       field: {
         type: Sequelize.STRING
-      },
-      event_id: {
-        type: Sequelize.INTEGER,
-          references:{
-              model : 'Events',
-              key: 'id'
-          }
       },
       createdAt: {
         allowNull: false,

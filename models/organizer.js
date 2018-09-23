@@ -7,9 +7,11 @@ module.exports = (sequelize, DataTypes) => {
         contactUrl: DataTypes.STRING,
         field: DataTypes.STRING,
         event_id: DataTypes.INTEGER
-    }, {
+    }, {});
 
-    });
+    Organizer.associate = function(models) {
+        Organizer.hasMany(models.Event)
+    };
 
     return Organizer;
 };
