@@ -15,7 +15,8 @@ module.exports = {
           event_name : req.body.event_name,
           startDate : req.body.startDate,
           endDate : req.body.endDate,
-          duration : req.body.duration
+          duration : req.body.duration,
+          urlImage : req.body.urlImage
       })
           .then((events) => res.status(201).send(events))
           .catch((error)=>{ res.status(400).send(error); });

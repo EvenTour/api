@@ -11,6 +11,9 @@ module.exports = {
       event_name: {
         type: Sequelize.STRING
       },
+      urlImage : {
+        type : Sequelize.STRING
+      },
       startDate: {
         type: Sequelize.STRING
       },

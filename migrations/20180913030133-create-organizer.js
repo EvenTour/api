@@ -8,6 +8,9 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      urlImage :{
+        type : Sequelize.STRING
+      },
       name: {
         type: Sequelize.STRING
       },
@@ -18,7 +21,11 @@ module.exports = {
         type: Sequelize.STRING
       },
       event_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+          references:{
+              model : 'Events',
+              key: 'id'
+          }
       },
       createdAt: {
         allowNull: false,
@@ -33,4 +40,5 @@ module.exports = {
   down: (queryInterface, Sequelize) => {
     return queryInterface.dropTable('Organizers');
   }
+
 };
