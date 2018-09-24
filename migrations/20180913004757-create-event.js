@@ -23,6 +23,9 @@ module.exports = {
       duration: {
         type: Sequelize.INTEGER
       },
+      OrganizerId :{
+        type : Sequelize.INTEGER
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
