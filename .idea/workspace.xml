@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b24cb6e6-9fad-4eb7-8e3c-fd30576f5d05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/organizer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/event.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/event.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/20180913004757-create-event.js" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/20180913004757-create-event.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/20180913010126-create-location.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/20180913030133-create-organizer.js" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/20180913030133-create-organizer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/20180913031604-create-schedule.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/20180913031924-create-talk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/20180913032240-create-space.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/20180913032436-create-survey.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/20180913033149-create-ticket.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/20180913040238-create-spectator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/20180913040327-create-speaker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/20180913040355-create-staff.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/event.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/event.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/location.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/organizer.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/organizer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/schedule.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/space.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/speaker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/spectator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/staff.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/survey.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/talk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ticket.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,7 +17,7 @@
     <session id="2075805313">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.5" value="2" />
@@ -75,62 +49,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/organizer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/event.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/migrations/20180913030133-create-organizer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/organizer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/migrations/20180913004757-create-event.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -182,7 +101,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -200,31 +119,6 @@
             <path>
               <item name="eventour-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="eventour-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eventour-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eventour-api" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eventour-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eventour-api" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eventour-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eventour-api" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eventour-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eventour-api" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eventour-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eventour-api" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -265,16 +159,15 @@
       <workItem from="1536800100750" duration="6194000" />
       <workItem from="1536812673785" duration="3786000" />
       <workItem from="1536816718824" duration="5404000" />
-      <workItem from="1537737714789" duration="4824000" />
+      <workItem from="1537737714789" duration="5995000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20208000" />
+    <option name="totallyTimeSpent" value="21379000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24255952" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -290,7 +183,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.36557376" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.36557376" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -435,6 +328,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/20180913030133-create-organizer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/event.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -458,15 +358,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/organizer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
+        <state relative-caret-position="245">
           <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/20180913030133-create-organizer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
         </state>
       </provider>
     </entry>
