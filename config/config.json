@@ -14,10 +14,11 @@
     "dialect": "postgres"
   },
   "production": {
+    "use_env_variable": "DATABASE_URL",
     "username": "postgres",
     "password": "root",
     "database": "eventour",
-    "host": "127.0.0.1",
+    "host": "https://eventour-api.herokuapp.com/",
     "dialect": "postgres"
   }
 }
