@@ -9,7 +9,8 @@ module.exports = (sequelize, DataTypes) => {
         duration: DataTypes.INTEGER
     }, {});
 
-    event.associate = function (models) {
+    Event.associate = function (models) {
+        
         Event.hasMany(models.Organizer,{
             foreignKey: 'event_id',
             as : 'organizers'
