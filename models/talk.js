@@ -19,5 +19,5 @@ module.exports = (sequelize, DataTypes) => {
         as : 'speaker_talks'
       });
     };
-    return talk;
+    return Talk;
 };
